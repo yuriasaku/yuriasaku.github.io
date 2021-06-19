@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    font-family: 微軟正黑體,Arial,Verdana,sans-serif;
 }
 ol, ul {
     list-style: none;
@@ -68,12 +69,110 @@ li.nav-item a {
 }
 
 .heroBanner {
-    position: relative;
+   background: url(../images/index/banner.png) no-repeat center;
+   height: 100vh;
+   width: 100%;
 }
 
-.text {
-    position: absolute;
-    top: 0;
-    z-index: 4;
-    font-size: 30px;
+.headerContainer {
+   height: 100vh;
+   width: 100%;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
 }
+
+.headerContainer h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    line-height: 4rem;
+}
+
+/*-------------about樣式-------------*/
+.about .container {
+    padding: 50px 0;
+}
+
+.about h1 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 微軟正黑體,Arial,Verdana,sans-serif;
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+
+.about h1 span.tittle {
+     color: #013A65;
+}
+
+.about .content {
+    padding: 0px 0;
+}
+
+.about .content p {
+    line-height: 1.6rem;
+    margin-bottom: 30px;
+    padding-right: 60px;
+}
+
+.about .content .more a {
+    background: #ADD6F5;
+    color: #013A65;
+    padding: 12px 30px;
+    text-decoration: none;
+    float: right;
+}
+
+.about .content .more a:hover {
+    background: #c3dff5;
+}
+
+
+/*-------------portfolio樣式-------------*/
+
+.portfolio {
+    text-align: center;
+    background: #eee;
+    padding: 32px 0;
+}
+.portfolio .nav-tabs {
+    display: inline-block;
+}
+
+.portfolio li.nav-item {
+    display: inline-block;
+}
+
+
+.portfolio .list .listImg {
+    height: 278px;
+    border-radius: 5px;
+    background: #9ca3ab;
+    margin: 50px 0 20px 0;
+}
+
+.portfolio h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*-------------Footer樣式-------------*/
+.footer {
+    background: #013A65;
+    color: #fff;
+    text-align: right;
+    padding: 14px 0;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
