@@ -2,20 +2,88 @@
    v2.0 | 20110126
    License: none (public domain)
 */
- 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -23,45 +91,66 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
+
 body {
     line-height: 1;
-    font-family: 微軟正黑體,Arial,Verdana,sans-serif;
+    font-family: 微軟正黑體, Arial, Verdana, sans-serif;
 }
-ol, ul {
+
+ol,
+ul {
     list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
 img {
-max-width: 100%;
+    max-width: 100%;
 }
 
 .navbar {
     padding: 1.1rem 1rem;
+    box-shadow: 1px 1px 2px #cccccc;
 }
+
 a.navbar-brand {
     font-size: 24px;
     font-weight: bold;
 }
 
 .navbar-light .navbar-brand.logo {
-   color: #013A65;
+    color: #013A65;
 }
 
 li.nav-item a {
@@ -69,18 +158,18 @@ li.nav-item a {
 }
 
 .heroBanner {
-   background: url(../images/index/banner.png) no-repeat center;
-   height: 100vh;
-   width: 100%;
+    background: url(../images/index/banner.png) no-repeat center;
+    height: 100vh;
+    width: 100%;
 }
 
 .headerContainer {
-   height: 100vh;
-   width: 100%;
-   text-align: center;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .headerContainer h1 {
@@ -98,13 +187,13 @@ li.nav-item a {
 .about h1 {
     font-size: 24px;
     font-weight: bold;
-    font-family: 微軟正黑體,Arial,Verdana,sans-serif;
+    font-family: 微軟正黑體, Arial, Verdana, sans-serif;
     line-height: 2rem;
     margin-bottom: 20px;
 }
 
 .about h1 span.tittle {
-     color: #013A65;
+    color: #013A65;
 }
 
 .about .content {
@@ -137,6 +226,7 @@ li.nav-item a {
     background: #eee;
     padding: 32px 0;
 }
+
 .portfolio .nav-tabs {
     display: inline-block;
 }
@@ -147,16 +237,21 @@ li.nav-item a {
 
 
 .portfolio .list .listImg {
-    height: 278px;
-    border-radius: 5px;
-    background: #9ca3ab;
+    height: auto;
     margin: 50px 0 20px 0;
+}
+
+.portfolio .list .listImg img {
+    border-radius: 5px;
 }
 
 .portfolio h1 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+}
+div#myTabContent {
+    margin-bottom: 100px;
 }
 
 /*-------------Footer樣式-------------*/
@@ -168,11 +263,53 @@ li.nav-item a {
     font-size: 14px;
 }
 
+/*-------------內頁about樣式-------------*/
+
+.heroBanner.about {
+    background: url(../images/about/moldBanner.png) no-repeat top;
+    height: auto;
+    width: 100%;
+}
+
+.heroBanner.about .container {
+    padding: 0;
+}
+
+.heroBanner.about .headerContainer {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+}
 
 
+/*-------------內頁portfolio樣式-------------*/
 
+.heroBanner.portfolio {
+    background: url(../images/about/moldBanner.png) no-repeat top;
+    height: auto;
+    width: 100%;
+    padding: 0;
+}
 
+.heroBanner.portfolio .container {
+    padding: 0;
+}
 
+.heroBanner.portfolio .headerContainer {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+}
 
+.portfolio.mold {
+    background: #fff;
+    padding: 0;
+}
 
 
