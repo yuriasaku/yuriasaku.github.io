@@ -251,18 +251,25 @@ li.nav-item a {
     margin-bottom: 20px;
 }
 div#myTabContent {
-    margin-bottom: 100px;
+     padding-bottom: 100px;
 }
 
+.tittle a {
+    color: #333;
+}
+
+.tittle a:hover {
+    text-decoration: none;
+    color: #666;
+}
 /*-------------Footer樣式-------------*/
 .footer {
     background: #013A65;
     color: #fff;
     text-align: right;
-    padding: 14px 0;
-    font-size: 14px;
+    padding: 17px 0;
+    font-size: 12px;
 }
-
 /*-------------內頁about樣式-------------*/
 
 .heroBanner.about {
@@ -284,6 +291,31 @@ div#myTabContent {
     height: 50vh;
 }
 
+.experienceList ul {
+    padding-left: 25px;
+}
+
+.experienceList li {
+    list-style: url(../images/about/dot.png) no-repeat;
+    font-size: 19px;
+    line-height: 2.0rem;
+    margin-bottom: 23px;
+}
+
+.experienceList li span.tittle,span.desCom,span.desDate {
+    display: block;
+}
+
+
+.experienceList li span.desCom {
+    font-size: 17px;
+}
+
+
+.experienceList li span.desDate {
+    color: #666;
+    font-size: 16px;
+}
 
 /*-------------內頁portfolio樣式-------------*/
 
@@ -312,4 +344,49 @@ div#myTabContent {
     padding: 0;
 }
 
+/*-------------網頁設計內頁樣式-------------*/
+.webcontent {
+    padding-bottom: 100px;
+}
+
+.topContent h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.topContent h1::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 4px;
+    background: #013A65;
+    margin-bottom: 9px;
+}
+
+.topContent p {
+    line-height: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.linkIn a {
+    display: block;
+    background: #013A65;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+.linkIn a:hover {
+    text-decoration: none;
+    background: #034a80;
+}
+
+/*-------------Ui設計內頁樣式-------------*/
+
+.imgWrapper {
+    display: flex;
+    justify-content: center;
+}
 
