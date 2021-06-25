@@ -4,16 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Personal Portfolio</title>
+   <title>Personal Portfolio</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <!--載入Jqiery -->
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.min.js"></script>
 </head>
 
-<body>
+<body class="loading">
     <div class="header">
         <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
             <div class="container">
@@ -91,6 +96,21 @@
     </div>
 
 </body>
+<!-- FlexSlider -->
+<script src="../js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+    $(function() {
+        SyntaxHighlighter.all();
+    });
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            start: function(slider) {
+                $('body').removeClass('loading');
+            }
+        });
+    });
 
+</script>
 
 </html>

@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Personal Portfolio</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/docs.theme.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <!--載入Jqiery -->
     <script src="../js/jquery-3.5.1.slim.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
 </head>
 
 <body>
@@ -47,12 +52,14 @@
     <div class="webcontent">
         <div class="container">
             <div class="row">
-<!--
-                <div class="col-lg-12">
-                    <img src="../images/portfolio/01.png">
+                <div class="col-lg-7">
+                   <div class="owl-carousel owl-theme">
+                        <div class="item" style="height:auto">
+                             <img src="../images/portfolio/web/a01_1.png">
+                        </div>
+                    </div>
+
                 </div>
--->
-                <div class="col-lg-7"><img src="../images/portfolio/01_1.png"></div>
                 <div class="col-lg-5">
                     <div class="topContent">
                         <h1>通太實業有限公司</h1>
@@ -74,5 +81,18 @@
 
 </body>
 
+<!-- owl.carousel -->
+<script src="../js/owl.carousel.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+            margin: 10,
+            autoHeight: true
+        });
+    })
+
+</script>
 
 </html>

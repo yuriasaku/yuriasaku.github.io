@@ -242,7 +242,7 @@ li.nav-item a {
 }
 
 .portfolio .list .listImg img {
-    border-radius: 5px;
+    /*    border-radius: 5px;*/
 }
 
 .portfolio h1 {
@@ -250,8 +250,9 @@ li.nav-item a {
     font-weight: bold;
     margin-bottom: 20px;
 }
+
 div#myTabContent {
-     padding-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .tittle a {
@@ -260,8 +261,35 @@ div#myTabContent {
 
 .tittle a:hover {
     text-decoration: none;
-    color: #666;
+    color: #217fca;
 }
+
+.portfolio .list {
+    position: relative;
+}
+
+.listDescription {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: url(../images/portfolio/link.png) #1f6ba5 no-repeat center;
+    opacity: 0;
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+}
+
+.portfolio .list:hover .listDescription {
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+
+
 /*-------------Footer樣式-------------*/
 .footer {
     background: #013A65;
@@ -270,6 +298,7 @@ div#myTabContent {
     padding: 17px 0;
     font-size: 12px;
 }
+
 /*-------------內頁about樣式-------------*/
 
 .heroBanner.about {
@@ -302,7 +331,9 @@ div#myTabContent {
     margin-bottom: 23px;
 }
 
-.experienceList li span.tittle,span.desCom,span.desDate {
+.experienceList li span.tittle,
+span.desCom,
+span.desDate {
     display: block;
 }
 
@@ -344,6 +375,12 @@ div#myTabContent {
     padding: 0;
 }
 
+
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+}
 /*-------------網頁設計內頁樣式-------------*/
 .webcontent {
     padding-bottom: 100px;
@@ -375,7 +412,6 @@ div#myTabContent {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    border-radius: 5px;
 }
 
 .linkIn a:hover {
@@ -389,4 +425,3 @@ div#myTabContent {
     display: flex;
     justify-content: center;
 }
-
