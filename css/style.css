@@ -288,6 +288,29 @@ div#myTabContent {
     cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+    .about .content {
+        padding: 0 30px;
+    }
+
+    .about .content .more a {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        float: none;
+        display: block;
+        padding: 15px 0;
+    }
+
+    .aboutImg {
+        text-align: center;
+    }
+
+    .aboutImg img {
+        width: 75%;
+    }
+
+}
 
 
 /*-------------Footer樣式-------------*/
@@ -299,12 +322,20 @@ div#myTabContent {
     font-size: 12px;
 }
 
+@media screen and (max-width:767px) {
+ .footer {
+    margin-top: 0;
+}
+}
+
+
 /*-------------內頁about樣式-------------*/
 
 .heroBanner.about {
     background: url(../images/about/moldBanner.png) no-repeat top;
-    height: auto;
+    height: 367px;
     width: 100%;
+    margin-bottom: 100px;
 }
 
 .heroBanner.about .container {
@@ -348,6 +379,16 @@ span.desDate {
     font-size: 16px;
 }
 
+@media screen and (max-width:767px) {
+    .experienceList {
+        padding: 0 30px;
+    }
+
+    .about .aboutImg img {
+        margin: 30px 0;
+    }
+}
+
 /*-------------內頁portfolio樣式-------------*/
 
 .heroBanner.portfolio {
@@ -380,7 +421,40 @@ span.desDate {
     margin-top: 10px;
     position: absolute;
     top: 50%;
+    width: 100%;
 }
+
+.webcontent .owl-nav button.owl-prev {
+    width: 50px;
+    height: 50px;
+    background: url(../images/portfolio/pre.png) no-repeat center;
+    background-size: 50%;
+    left: 0;
+    position: absolute;
+}
+
+.webcontent .owl-nav button.owl-next {
+    width: 50px;
+    height: 50px;
+    background: url(../images/portfolio/next.png) no-repeat center;
+    background-size: 50%;
+    right: 0;
+    position: absolute;
+}
+
+.owl-dots {
+    margin-top: 30px;
+}
+
+@media screen and (max-width:767px) {
+    .heroBanner.about .headerContainer {
+        height: 70vh;
+    }
+    .topContent {
+    margin-top: 50px;
+}
+}
+
 /*-------------網頁設計內頁樣式-------------*/
 .webcontent {
     padding-bottom: 100px;
