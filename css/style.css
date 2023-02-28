@@ -108,8 +108,13 @@ section {
 }
 
 body {
+    letter-spacing: 1px;
     line-height: 1;
-    font-family: 微軟正黑體, Arial, Verdana, sans-serif;
+    font-size: 16px;
+    color: #444444;
+    font-family: 'Noto Sans TC', 微軟正黑體, Arial, Verdana, sans-serif;
+    position: relative;
+
 }
 
 ol,
@@ -139,363 +144,233 @@ img {
     max-width: 100%;
 }
 
-.navbar {
-    padding: 1.1rem 1rem;
-    box-shadow: 1px 1px 2px #cccccc;
+
+
+/*---header---*/
+
+#navbarNav {
+    flex-grow: inherit;
 }
 
-a.navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    padding-top: 53px;
+    padding-bottom: 60px;
 }
 
-.navbar-light .navbar-brand.logo {
-    color: #013A65;
-}
-
-li.nav-item a {
-    color: #333;
-}
-
-.heroBanner {
-    background: url(../images/index/banner.jpg) no-repeat center;
-    height: 100vh;
-    width: 100%;
-}
-
-.headerContainer {
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.headerContainer h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #fff;
-    line-height: 4rem;
-}
-
-/*-------------about樣式-------------*/
-.about .container {
-    padding: 50px 0;
-}
-
-.about h1 {
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 微軟正黑體, Arial, Verdana, sans-serif;
-    line-height: 2rem;
-    margin-bottom: 20px;
-}
-
-.about h1 span.tittle {
-    color: #013A65;
-}
-
-.about .content {
-    padding: 0px 0;
-}
-
-.about .content p {
-    line-height: 1.6rem;
-    margin-bottom: 30px;
-    padding-right: 60px;
-}
-
-.about .content .more a {
-    background: #ADD6F5;
-    color: #013A65;
-    padding: 12px 30px;
-    text-decoration: none;
-    float: right;
-}
-
-.about .content .more a:hover {
-    background: #c3dff5;
+.headerStyle,
+.headerStyle .bg-light,
+section.content {
+    background: #ececec !important;
 }
 
 
-/*-------------portfolio樣式-------------*/
-
-.portfolio {
-    text-align: center;
-    background: #eee;
-    padding: 32px 0;
-}
-
-.portfolio .nav-tabs {
-    display: inline-block;
-}
-
-.portfolio li.nav-item {
-    display: inline-block;
+.headerStyle a.navbar-brand.logo {
+    font-family: 'DM Serif Display';
+    font-size: 38px;
 }
 
 
-.portfolio .list .listImg {
-    height: auto;
-    margin: 50px 0 20px 0;
-}
-
-.portfolio .list .listImg img {
-    /*    border-radius: 5px;*/
-}
-
-.portfolio h1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-div#myTabContent {
-    padding-bottom: 100px;
-}
-
-.tittle a {
-    color: #333;
-}
-
-.tittle a:hover {
-    text-decoration: none;
-    color: #217fca;
-}
-
-.portfolio .list {
-    position: relative;
-}
-
-.listDescription {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background: url(../images/portfolio/link.png) #1f6ba5 no-repeat center;
-    opacity: 0;
-    transition: all 0.8s ease;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-}
-
-.portfolio .list:hover .listDescription {
-    transition: all 0.8s ease;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    opacity: 0.9;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 767px) {
-    .about .content {
-        padding: 0 30px;
-    }
-
-    .about .content .more a {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 30px;
-        float: none;
-        display: block;
-        padding: 15px 0;
-    }
-
-    .aboutImg {
-        text-align: center;
-    }
-
-    .aboutImg img {
-        width: 75%;
-    }
-
+.headerStyle span.sub {
+    color: #32aba2;
 }
 
 
-/*-------------Footer樣式-------------*/
-.footer {
-    background: #013A65;
-    color: #fff;
-    text-align: right;
-    padding: 17px 0;
-    font-size: 12px;
-}
-
-@media screen and (max-width:767px) {
- .footer {
-    margin-top: 0;
-}
-}
-
-
-/*-------------內頁about樣式-------------*/
-
-.heroBanner.about {
-    background: url(../images/about/moldBanner.png) no-repeat top;
-    height: 367px;
-    width: 100%;
-    margin-bottom: 100px;
-}
-
-.heroBanner.about .container {
-    padding: 0;
-}
-
-.heroBanner.about .headerContainer {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 50vh;
-}
-
-.experienceList ul {
-    padding-left: 25px;
-}
-
-.experienceList li {
-    list-style: url(../images/about/dot.png) no-repeat;
-    font-size: 19px;
-    line-height: 2.0rem;
-    margin-bottom: 23px;
-}
-
-.experienceList li span.tittle,
-span.desCom,
-span.desDate {
-    display: block;
-}
-
-
-.experienceList li span.desCom {
-    font-size: 17px;
-}
-
-
-.experienceList li span.desDate {
-    color: #666;
-    font-size: 16px;
-}
-
-@media screen and (max-width:767px) {
-    .experienceList {
-        padding: 0 30px;
-    }
-
-    .about .aboutImg img {
-        margin: 30px 0;
-    }
-}
-
-/*-------------內頁portfolio樣式-------------*/
-
-.heroBanner.portfolio {
-    background: url(../images/about/moldBanner.png) no-repeat top;
-    height: auto;
-    width: 100%;
-    padding: 0;
-}
-
-.heroBanner.portfolio .container {
-    padding: 0;
-}
-
-.heroBanner.portfolio .headerContainer {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 50vh;
-}
-
-.portfolio.mold {
-    background: #fff;
-    padding: 0;
-}
-
-
-.owl-theme .owl-nav {
-    margin-top: 10px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-}
-
-.webcontent .owl-nav button.owl-prev {
-    width: 50px;
-    height: 50px;
-    background: url(../images/portfolio/pre.png) no-repeat center;
-    background-size: 50%;
-    left: 0;
-    position: absolute;
-}
-
-.webcontent .owl-nav button.owl-next {
-    width: 50px;
-    height: 50px;
-    background: url(../images/portfolio/next.png) no-repeat center;
-    background-size: 50%;
-    right: 0;
-    position: absolute;
-}
-
-.owl-dots {
-    margin-top: 30px;
-}
-
-@media screen and (max-width:767px) {
-    .heroBanner.about .headerContainer {
-        height: 70vh;
-    }
-    .topContent {
-    margin-top: 50px;
-}
-}
-
-/*-------------網頁設計內頁樣式-------------*/
-.webcontent {
-    padding-bottom: 100px;
-}
-
-.topContent h1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.topContent h1::before {
+.navbar-light .navbar-nav li.nav-item::after {
     content: "";
     display: block;
-    width: 56px;
-    height: 4px;
-    background: #013A65;
-    margin-bottom: 9px;
+    width: 0;
+    height: 2px;
+    background: #32aba2;
+    transition: all .5s linear;
 }
 
-.topContent p {
-    line-height: 1.8rem;
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #32aba2;
+}
+
+
+.navbar-light .navbar-nav li.nav-item.active a{
+    color: #32aba2;
+}
+
+
+.navbar-light .navbar-nav li.nav-item.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #32aba2;
+    transition: all .5s linear;
+}
+
+
+.navbar-light .navbar-nav li.nav-item {
+    margin: 0 15px;
+}
+
+
+.navbar-light .navbar-nav li.nav-item:hover::after {
+    width: 100%;
+}
+
+
+/*---content---*/
+
+section.content .blockType {
+    margin-bottom: 45px;
+}
+
+section.content {
+    padding-bottom: 30px;
+}
+
+
+.leftContent {
+    margin-bottom: 50px;
+}
+
+
+.innerBlock {
+    background: #fff;
+    padding: 11px;
+    margin-bottom: 27px;
+}
+
+.information li {
+    margin-bottom: 10px;
+}
+
+.information span.title {
+    color: #8d8d8d;
+}
+
+
+.itemImg {
+    position: relative;
+    cursor: pointer;
+    display: block;
+}
+
+.itemImg img {
+    width: 100%;
+}
+
+.itemImg:hover::after {
+    opacity: 1;
+
+}
+
+.itemImg::after {
+    display: block;
+    content: "";
+    background: url(../images/hoverImg.png) no-repeat center rgba(24, 127, 118, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: all .5s linear;
+}
+
+
+
+/*---footer---*/
+
+footer.copyright {
+    padding: 40px;
+    text-align: center;
+}
+
+
+.goTop a {
+    display: block;
+    background: rgba(91, 91, 91, 0.8);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15%;
+    right: 5%;
+    text-align: center;
+}
+
+.goTop a:hover {
+    opacity: .8;
+}
+
+
+/* ---mold style--- */
+
+.leftContent .information li {
+    margin-bottom: 32px;
+}
+
+.leftContent .information span.title {
+    margin-bottom: 0px;
+    display: block;
+    font-size: 14px;
+}
+
+
+.leftContent .link a {
+    background: #8a8a8a;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    max-width: 178px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+}
+
+.leftContent .link a:hover {
+    background: #32aba2;
+}
+
+
+.rightContent .imgBlock {
+    padding: 95px 80px;
+    background: #fff;
+    margin-bottom: 45px;
+}
+
+.imgShadow {
+    box-shadow: 0px 8px 10px rgb(0 0 0 / 40%);
+}
+
+/* ---page--- */
+
+
+ul.pageList {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 180px;
+}
+
+.page.top ul.pageList {
     margin-bottom: 20px;
 }
 
-.linkIn a {
-    display: block;
-    background: #013A65;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.linkIn a:hover {
+ul.pageList a {
     text-decoration: none;
-    background: #034a80;
+    color: #646464;
 }
 
-/*-------------Ui設計內頁樣式-------------*/
+ul.pageList a:hover {
+    color: #32aba2;
+}
 
-.imgWrapper {
-    display: flex;
-    justify-content: center;
+
+ul.pageList a i {
+    margin:0 10px;
+}
+
+
+/* ---RWD--- */
+
+.rightContent .imgBlock {
+    padding: 30px 40px;
 }

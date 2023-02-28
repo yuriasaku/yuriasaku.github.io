@@ -1,151 +1,145 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Personal Portfolio</title>
-    <!-- Bootstrap CSS -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gina’s Portfolio</title>
+    <!-- googleFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans+TC&display=swap" rel="stylesheet">
+     <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-    <!--載入Jqiery -->
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/jquery.mousewheel.js"></script>
-    <script src="js/jquery.min.js"></script>
 </head>
 
-<body class="loading">
-    <div class="header">
-        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-            <div class="container">
-                <a class="navbar-brand logo" href="index.html">Personal Portfolio</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">首頁</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">作品集</a>
-                        </li>
-                    </ul>
-                </div>
-        </nav>
-    </div>
-    </div>
-    <div class="heroBanner">
+<body>
+    <header class="headerStyle">
         <div class="container">
-            <div class="headerContainer">
-                <h1>Hello!
-                    <p class="text">歡迎來到我的個人作品集!</p>
-                </h1>
-            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo" href="index.html">Gina’s <span class="sub">Portfolio</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse menu" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Website</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </div>
-    <div class="about">
+    </header>
+
+    <section class="content">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
-                    <div class="content">
-                        <h1>您好!<br>
-                            歡迎來到<span class="tittle">Gina Lee的個人作品集</span></h1>
-                        <p>畢業於高雄樹德科技大學視覺傳達設計系。<br>
-                            目前有3-4年左右的網頁設計經驗，對於網站設計的美學、技術和用戶體驗目前都有持續不斷精進。
-                            <br>
-                            我的設計風格注重細節和簡潔，且也會專注聆聽客戶需求，並與團隊其他部門進行溝通，以確保案件順利地被執行和完成。
-                            <br>
-                            同時不斷地學習和探索最新的技術，讓我的設計保持一定的品質。
-                        <h3>擅長工具：<h3>
-                                <br>設計繪圖軟體:Adobe Photoshop、Adobe Illustrator、Adobe XD<br>
-                                網頁設計類：HTML、HTML5、CSS、Bootstrap、visual studio code、網頁版面切版、RWD響應式網頁設計</p>
+                <div class="col-md-4 col-sm-6 blockType">
+                    <div class="innerBlock">
+                        <a href="webdesign/html_01.html" class="itemImg"><img src="images/webImg_01.jpg"></a>
+                    </div>
+                    <div class="information">
+                        <ul>
+                            <li><span class="title">作品名稱&ensp;|&ensp;</span>長星工業</li>
+                            <li><span class="title">產&emsp;&emsp;業&ensp;|&ensp;</span>製造業</li>
+                            <li><span class="title">網站類型&ensp;|&ensp;</span>企業形象網站</li>
+                            <li><span class="title">完成日期&ensp;|&ensp;</span>2023</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="aboutImg"><img src="images/index/img01.png"></div>
+                <div class="col-md-4 col-sm-6 blockType">
+                    <div class="innerBlock">
+                        <a href="webdesign/html_02.html" class="itemImg"><img src="images/webImg_02.jpg"></a>
+                    </div>
+                    <div class="information">
+                        <ul>
+                            <li><span class="title">作品名稱&ensp;|&ensp;</span>七里香甕仔雞</li>
+                            <li><span class="title">產&emsp;&emsp;業&ensp;|&ensp;</span>餐飲業</li>
+                            <li><span class="title">網站類型&ensp;|&ensp;</span>購物網站</li>
+                            <li><span class="title">完成日期&ensp;|&ensp;</span>2022</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio">
-        <div class="container">
-            <h1>作品集</h1>
-            <div class="content">
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="webdesign" role="tabpanel"
-                        aria-labelledby="webdesign-tab">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="list">
-                                    <div class="listImg"><a href="webdesign/web01.html"><img
-                                                src="images/portfolio/web/a01.jpg">
-                                            <div class="listDescription">
-                                            </div>
-
-                                        </a></div>
-                                </div>
-                                <div class="tittle"><a href="https://www.cilisiang.com.tw/index_tw.php">七里香甕仔雞</a></div>
-
-                            </div>
-                            <div class="col-md-4">
-                                <div class="list">
-                                    <div class="listImg"><a href="webdesign/web02.html"><img
-                                                src="images/portfolio/web/a02.jpg">
-                                            <div class="listDescription">
-                                            </div>
-
-                                        </a></div>
-                                </div>
-                                <div class="tittle"><a href="https://www.chali.com.tw/index_tw.php">長星工業</a></div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="list">
-                                    <div class="listImg"><a href="webdesign/web03.html"><img
-                                                src="images/portfolio/web/a03.jpg">
-                                            <div class="listDescription">
-                                            </div>
-
-                                        </a></div>
-                                </div>
-                                <div class="tittle"><a href="http://www.shenghong-alm.com/index_tw.php">盛鴻金屬科技</a></div>
-                            </div>
-                        </div>
+                <div class="col-md-4 col-sm-6 blockType">
+                    <div class="innerBlock">
+                        <a href="webdesign/html_03.html" class="itemImg"><img src="images/webImg_03.jpg"></a>
+                    </div>
+                    <div class="information">
+                        <ul>
+                            <li><span class="title">作品名稱&ensp;|&ensp;</span>健和興端子</li>
+                            <li><span class="title">產&emsp;&emsp;業&ensp;|&ensp;</span>電子零組件製造業</li>
+                            <li><span class="title">網站類型&ensp;|&ensp;</span>企業形象網站</li>
+                            <li><span class="title">完成日期&ensp;|&ensp;</span>2021</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 blockType">
+                    <div class="innerBlock">
+                        <a href="webdesign/html_04.html" class="itemImg"><img src="images/webImg_04.jpg"></a>
+                    </div>
+                    <div class="information">
+                        <ul>
+                            <li><span class="title">作品名稱&ensp;|&ensp;</span>大軫車料</li>
+                            <li><span class="title">產&emsp;&emsp;業&ensp;|&ensp;</span>製造業</li>
+                            <li><span class="title">網站類型&ensp;|&ensp;</span>企業形象網站</li>
+                            <li><span class="title">完成日期&ensp;|&ensp;</span>2020</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 blockType">
+                    <div class="innerBlock">
+                        <a href="webdesign/html_05.html" class="itemImg"><img src="images/webImg_05.jpg"></a>
+                    </div>
+                    <div class="information">
+                        <ul>
+                            <li><span class="title">作品名稱&ensp;|&ensp;</span>Life Style生活棧</li>
+                            <li><span class="title">產&emsp;&emsp;業&ensp;|&ensp;</span>餐飲業</li>
+                            <li><span class="title">網站類型&ensp;|&ensp;</span>購物網頁</li>
+                            <li><span class="title">完成日期&ensp;|&ensp;</span>2019</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 blockType">
+                    <div class="innerBlock">
+                        <a href="webdesign/html_06.html" class="itemImg"><img src="images/webImg_06.jpg"></a>
+                    </div>
+                    <div class="information">
+                        <ul>
+                            <li><span class="title">作品名稱&ensp;|&ensp;</span>彼安特</li>
+                            <li><span class="title">產&emsp;&emsp;業&ensp;|&ensp;</span>綜合商品批發代理業</li>
+                            <li><span class="title">網站類型&ensp;|&ensp;</span>購物網頁</li>
+                            <li><span class="title">完成日期&ensp;|&ensp;</span>2019</li>
+                        </ul>
                     </div>
                 </div>
 
+
             </div>
-
         </div>
+    </section>
 
-    </div>
-    <div class="footer">
-        <div class="container">
-            <div class="copyright">Copyright © 2023 Design by Gina Lee All Rights Reserved.</div>
-        </div>
-    </div>
 
+    <footer class="copyright">
+        <div class="container">© Gina’s Portfolio </div>
+    </footer>
+<div class="goTop"><a href="#"><img src="images/arrow.png"></a></div>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
 </body>
-<!-- FlexSlider -->
-<script src="../js/jquery.flexslider.js"></script>
-<script type="text/javascript">
-    $(function () {
-        SyntaxHighlighter.all();
-    });
-    $(window).load(function () {
-        $('.flexslider').flexslider({
-            animation: "slide",
-            start: function (slider) {
-                $('body').removeClass('loading');
-            }
-        });
-    });
 
-</script>
 
+<!-- 作品集 -->
+<!-- https://www.cilisiang.com.tw/allstore_tw_1.php -->
+<!-- http://www.dazhen.net/tw_index.asp -->
+<!-- http://demo.global-trade.com.tw/RWD/337/tw_index.asp -->
+<!-- https://www.chali.com.tw/index_tw.php -->
+<!-- http://demo.global-trade.com.tw/RWD/335/eng_index.asp -->
+
+<!-- https://www.latteandpark.com/post/whatisthisfor -->
 </html>
