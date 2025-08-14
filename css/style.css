@@ -114,6 +114,7 @@ body {
     color: #444444;
     font-family: 'Noto Sans TC', 微軟正黑體, Arial, Verdana, sans-serif;
     position: relative;
+    background: #ececec;
 
 }
 
@@ -223,6 +224,7 @@ section.content .blockType {
 
 section.content {
     padding-bottom: 30px;
+  
 }
 
 
@@ -341,6 +343,11 @@ footer.copyright {
     box-shadow: 0px 8px 10px rgb(0 0 0 / 40%);
 }
 
+img.imgShadow.appstyle {
+    width: 50%;
+    margin: 15px auto;
+}
+
 /* ---page--- */
 
 
@@ -373,4 +380,5 @@ ul.pageList a i {
 
 .rightContent .imgBlock {
     padding: 30px 40px;
+    text-align: center;
 }
